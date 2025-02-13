@@ -31,7 +31,7 @@ header {
     min-height: 60px;
 
     nav {
-        height: inherit;
+        min-height: inherit;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -43,12 +43,38 @@ header {
             align-items: center;
             justify-content: center;
             column-gap: 1rem;
+
+            li a {
+                text-decoration: none;
+                color: black;
+                padding: 0.5rem 1.5rem;
+                border-radius: 5px;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
         }
 
         .accountCartWrapper {
             display: flex;
             column-gap: 1rem;
             align-items: center;
+
+            .accountSettings {
+                background-color: black;
+                color: white;
+                padding: 0.4rem 1.25rem;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
