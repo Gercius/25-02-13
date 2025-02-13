@@ -1,0 +1,150 @@
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/* HEADER */
+header {
+    min-height: 60px;
+
+    nav {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        column-gap: 1rem;
+        flex-wrap: wrap;
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 1rem;
+        }
+
+        .accountCartWrapper {
+            display: flex;
+            column-gap: 1rem;
+            align-items: center;
+        }
+    }
+}
+
+/* MAIN */
+main .hero {
+}
+
+main .benefits {
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+
+    .benefitsItem {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+    }
+}
+
+main .gameBanner {
+}
+
+main .featured {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+
+    .featuredIcons {
+        display: flex;
+        column-gap: 2rem;
+    }
+
+    .disclaimer {
+        text-align: center;
+    }
+}
+
+/* FOOTER */
+footer .contacts {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+
+    .contactItem {
+        display: flex;
+        column-gap: 1rem;
+        max-width: 250px;
+    }
+}
+
+footer .socialsNav {
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6rem;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+
+    .socials {
+        .logo {
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .socialsLinks {
+            margin-top: 1rem;
+
+            ul {
+                display: flex;
+                column-gap: 1rem;
+            }
+        }
+    }
+
+    .footerNav {
+        display: flex;
+        justify-content: center;
+        column-gap: 2rem;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+
+        ul {
+            min-width: 150px;
+            margin-top: 0.5rem;
+        }
+    }
+}
